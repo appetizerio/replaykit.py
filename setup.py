@@ -1,14 +1,13 @@
 import os
 
 from setuptools import setup
-VERSION = (1, 0, 2)
+VERSION = (1, 0, 0)
 __version__ = '.'.join((str(x) for x in VERSION))
 
 setup(
     name='appetizer',
     version=__version__,
     description='Appetizer tools for test recording, replaying and functional testing',
-    long_description=open('README.md').read(),
     author='Mingyuan Xia',
     author_email='mxia@mxia.me',
     url='https://github.com/appetizerio/appetizer-toolkit-py',
