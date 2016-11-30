@@ -1,2 +1,2 @@
 # appetizer-toolkit-py
-[incubating] SDK for using Appetizer toolkit command line tools
+Python SDK for using [Appetizer toolkit command line tools](https://github.com/appetizerio/appetizer-toolkit)
