@@ -7,4 +7,6 @@ python:
   - "3.6"
 script:
   - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pytest;else py.test; fi
+notifications:
+  slack: appcademy:iHt6U7lzeWrIvYzahPT6rXIz
 
