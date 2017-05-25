@@ -1,4 +1,4 @@
-# replaykit.py [![Build Status](https://travis-ci.org/appetizerio/appetizer-toolkit-py.svg?branch=master)](https://travis-ci.org/appetizerio/appetizer-toolkit-py)
+# replaykit.py [![Build Status](https://travis-ci.org/appetizerio/replaykit.py.svg?branch=master)](https://travis-ci.org/appetizerio/replaykit.py)
 Python SDK for using [Appetizer replaykit command line tools](https://github.com/appetizerio/replaykit)
 
 Please checkout the documentation in the [repo wiki](https://github.com/appetizerio/replaykit.py/wiki).
