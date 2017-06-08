@@ -71,7 +71,7 @@ class ADBCommands(object):
 
         Note that the path could be a unicode string.
         The default installation paths for different OSes are:
-        Windows: C:\\Users\\<User Name>\\AppData\\Local\\Android\\sdk\\platform-tools\
+        Windows: C:\\Users\\<User Name>\\AppData\\Local\\Android\\sdk\\platform-tools
         Linux: /home/<User Name>/Android/Sdk/platform-tools/adb
         """
         return json.loads(self.appetizer.check_output(["adb", "detectadb"]))
