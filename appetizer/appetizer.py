@@ -25,7 +25,7 @@ class RunningTaskControl(object):
 
     def stop(self):
         """ Signal the task to stop gracefully. Wait until it stops and return its process return code """
-        self.p.communicate('please quit\n')
+        self.p.communicate('please quit\n'.encode())
         return self.p.wait()
 
     def is_finished(self):
@@ -71,7 +71,7 @@ class ADBCommands(object):
 
         Note that the path could be a unicode string.
         The default installation paths for different OSes are:
-        Windows: C:\Users\<User Name>\AppData\Local\Android\sdk\platform-tools\
+        Windows: C:\\Users\\<User Name>\\AppData\\Local\\Android\\sdk\\platform-tools\
         Linux: /home/<User Name>/Android/Sdk/platform-tools/adb
         """
         return json.loads(self.appetizer.check_output(["adb", "detectadb"]))
@@ -246,6 +246,7 @@ class Appetizer(object):
         subprocess.call(self.program + args)
 
     def check_output(self, args):
+        print(self.program)
         return subprocess.check_output(self.program + args)
 
     def run(self, args, stdin=None, stdout=None, stderr=None):
